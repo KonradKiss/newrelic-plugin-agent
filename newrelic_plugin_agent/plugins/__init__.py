@@ -5,6 +5,7 @@ being profiled.
 """
 available = {
     'apache_httpd': 'newrelic_plugin_agent.plugins.apache_httpd.ApacheHTTPD',
+    'couchbase': 'newrelic_plugin_agent.plugins.couchbase.Couchbase',
     'couchdb': 'newrelic_plugin_agent.plugins.couchdb.CouchDB',
     'edgecast': 'newrelic_plugin_agent.plugins.edgecast.Edgecast',
     'elasticsearch':

@@ -6,6 +6,7 @@ NewRelic platform. Currently supported backend systems are:
 
 - Alternative PHP Cache
 - Apache HTTP Server
+- Couchbase
 - CouchDB
 - Elasticsearch
 - HAProxy
@@ -254,7 +255,7 @@ UWSGI Installation Notes
 ------------------------
 The UWSGI plugin can communicate either over UNIX domain sockets using the path configuration variable or TCP/IP using the host and port variables. Do not include both.
 
-Make sure you have `enabled stats server 
+Make sure you have `enabled stats server
 <http://uwsgi-docs.readthedocs.org/en/latest/StatsServer.html>`_ in your uwsgi config.
 
 Configuration Example
@@ -283,6 +284,11 @@ Configuration Example
             port: 80
             path: /server-status
             #verify_ssl_cert: true
+
+      couchbase:
+        name: localhost
+        host: localhost
+        port: 8091
 
       couchdb:
          -  name: localhost
