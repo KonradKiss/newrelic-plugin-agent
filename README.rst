@@ -143,6 +143,17 @@ The agent requires the extended information to parse metrics. If you are not see
 
 If you are monitoring Apache HTTPd via a HTTPS connection you can use the ``verify_ssl_cert`` configuration value in the httpd configuration section to disable SSL certificate verification.
 
+Couchbase Installation Notes
+----------------------------
+In order to get all the couchbase metrics, couchbase plugin uses an external plugin: StatsMetrics_.
+
+.. _StatsMetrics: https://github.com/brunopsoares/statsmetrics
+
+::
+
+    $ pip install statsmetrics
+
+
 Memcached Installation Notes
 ----------------------------
 The memcached plugin can communicate either over UNIX domain sockets using the path configuration variable or TCP/IP using the host and port variables. Do not include both.
